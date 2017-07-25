@@ -9,7 +9,7 @@ RUN apt-get -y update && apt-get -y dist-upgrade && apt-get clean
 RUN apt-get update && \
 apt-get install --no-install-recommends -y \
 ruby \ 
-metasploit-framework\
+metasploit-framework
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
